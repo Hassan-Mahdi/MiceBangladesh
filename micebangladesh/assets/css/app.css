@@ -1,0 +1,1029 @@
+/*-----------------------
+[Main Stylesheet]
+
+Project:    Mice home
+Version:    1.0
+Last change:    10/07/2023
+Assigned to:    
+Primary use:    
+-------------------------------*/
+
+/* ----------------------
+## Table Contents ##
+* 01. Header / nav / slider /
+* 02. content / destination / events
+* 03. Service / service-slider 
+* 04. News / card
+* 05. Upcoming Events / Card
+* 06. Partners / Tourism Boards / Media partners
+* 07. footer / 
+---------------------- **/
+/*NOTE: You can write your code in css/style.css file.*/ 
+
+
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* 01. Header / nav / slider */
+.navbar-nav li a {
+  font-weight: 600;
+}
+.nav-items {
+    display: flex;
+    justify-content: end;
+    text-transform: uppercase;
+  }
+
+  .nav-item a {
+    font-size: .9rem;
+  }
+
+/* .active {
+  background-color: #231F20;
+  color: #ffffff;
+} */
+
+  /* 02. content / destination / events */
+  .de-img img{
+    width: 100%;
+  }
+
+  .de-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+ .de-text-p {
+    font-size: 1.5rem;
+    border-left: 3px dotted #000;
+    margin-left: -120px;
+    padding: 140px 30px;
+  }
+
+  /* events tab*/
+  .event-section-tp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    position: relative;
+  }
+
+  .events-one-ht{
+    background-color: #231F20;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .events-one-ht::after {
+    content: ' ';
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+	  border-right: 20px solid transparent;
+	  border-top: 40px solid #231F20;
+    position: absolute;
+    bottom: -20px;
+}
+
+  .events-two-ht{
+    background-color: #D9D9D9;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: .5px solid #000;
+  }
+
+  .event-section-bt {
+    background-image: url(../images/event-bg.png);
+    background-size: cover;
+  }
+
+  .event-section-bt {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+  }
+
+  .Ellip {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #231F20;
+    margin: 15px 0;
+    padding: 15px;
+    position: relative;
+  }
+
+  @media (max-width: 320px) {
+    .Ellip {
+      margin-left: 5px;
+    }  
+  }
+  @media (min-width:321px) and (max-width:425px) {
+    .Ellip {
+      display: inline-block;
+      margin-left: 15px;
+  }
+}
+
+  .elp-icon {
+    position: absolute;
+    left: 25%;
+    top: 15%;
+  }
+
+  .Ellip-items p {
+      margin-left: -20px;
+      padding-bottom: 10px;
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+  }
+
+  /* events tab Style*/
+.tab {
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 375px) {
+  .tab button {
+    font-size: .7rem;
+  }
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #231F20;
+  color: #fff;
+  position: relative;
+}
+
+.tab button.active::after {
+  content: '\25BC';
+  color: #231F20;
+  font-size: 2rem;
+  position: absolute;
+  right: 50%;
+  bottom: -30px;
+}
+
+.tabcontent {
+  display: none;
+}
+
+  /* 03. Service / service-slider  */
+.service-h2 {
+  text-transform: uppercase;
+  margin: 40px 0;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.service-h2::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  width: 130px;
+  height: 5px;
+  background-color: #ff0000;
+} 
+
+/* 04. News / card */
+.news-h2{
+  text-transform: uppercase;
+  margin: 40px 0;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.news-h2::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  width: 130px;
+  height: 5px;
+  background-color: #ff0000;
+}
+
+/* inside card */
+.card-text {
+  padding: 10px 0;
+}
+
+.card-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.crad-btn {
+  background-color: #231F20;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: all .5s;
+}
+
+.crad-btn:hover {
+  opacity: .8;
+}
+
+.card-img-top:hover {
+  opacity: .9;
+}
+
+/* 05. Upcoming Events / Card */
+.events {
+  background-image: url(../images/upcoming-events.png);
+  position: relative;
+  z-index: 0;
+}
+
+.overly {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: .8;
+  z-index: -3;
+}
+
+.events-h2 {
+  text-transform: uppercase;
+  margin: 40px 0;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.events-h2:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  width: 130px;
+  height: 5px;
+  background-color: #ff0000;
+}
+
+/* 06. Partners / Tourism Boards / Media partners */
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+  color: inherit;
+  border: none;
+  padding: 0!important;
+  font: inherit;
+  display: none;
+}
+
+.owl-carousel .owl-item img {
+  width: 100% !important;
+}
+
+@media (min-width: 768px) {
+  .no-js .owl-carousel, .owl-carousel.owl-loaded {
+    width: 100%!important;
+  }  
+}
+
+/* carousel end */
+.partners-h2 {
+  text-align: center;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.partners-h2::after {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  width: 130px;
+  height: 5px;
+  background-color: #ff0000;
+}
+/* 07. footer /  */
+.footer {
+  background-color: #231F20;
+}
+
+.footer-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text, .footer-contact{
+  color: #fff;
+  padding: 15px 15px;
+  font-size: 1rem;
+}
+
+.footer-contact {
+  line-height: 1.5;
+}
+
+.ft-cp {
+  padding: 0 10px;
+}
+
+.footer__text  p {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__text a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__text p:hover {
+  opacity: 0.7;
+}
+
+.footer-contact-text {
+  line-height: 2;
+}
+
+
+/* media query for home page responsive */
+@media (max-width: 1000px) {
+  .de-text-p {
+    font-size: 1.5rem;
+    border-left: none;
+    margin-left: -120px;
+    padding: 0 30px;
+}
+}
+
+@media (max-width: 576px) {
+  .map {
+    position: relative;
+  }
+  .de-text-p {
+    margin: 10px 0;
+  }
+  .de-text-p br{
+    display: none;
+  }
+  .de-text {
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+    display: block;
+  }
+}
+
+@media (max-width:450px) {
+  .Ellip-items p {
+    margin-left: 0;
+}
+}
+
+/* media query for footer responsive */
+@media (max-width:768px) {
+  .footer-text p, a{
+    font-size: .7rem;
+  }
+  .footer-contact p{
+    font-size: .7rem;
+  } 
+}
+
+/* ----------------------
+## Table Contents mice bangladesh##
+* 02. mice bangladesh /
+* 03. we mice /
+* 04. mice mission /
+* 05. mice vision /
+---------------------- **/
+
+
+ /* 02. mice bangladesh */
+  .micebd__title, .wemice_title, .mission__title, .vision_title {
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 30px 0;
+  }
+
+  .micebd__title, .wemice_title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .micebd__title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 130px;
+    height: 5px;
+    background-color: #ff0000;
+  }
+
+  .micebd__content {
+    display: flex;
+    align-items: center;
+  }
+
+  .micebd__content_text {
+    text-align: justify;
+  }
+
+  .micebd__content_img img{
+    width: 100%;
+  }
+
+  /* 03. we mice / */
+.wemice_content {
+  display: flex;
+  align-items: center;
+}
+
+.wemice_title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 130px;
+  height: 5px;
+  background-color: #ff0000;
+}
+
+.wemice_content_textR p {
+  text-align: justify;
+}
+.wemice_content_text p {
+  text-align: justify;
+}
+
+.wemice_content_textR h4 {
+  text-align: right;
+  position: relative;
+}
+.wemice_content_text h4 {
+  position: relative;
+}
+
+.meeting-line, .conference-line {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 3px;
+  background-color: #231F20;
+  left: 0;
+  top: 50%;
+}
+
+.incentive-line, .exhibition-line {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 3px;
+  background-color: #231F20;
+  right: 0;
+  top: 50%;
+}
+
+.wemice_content_img img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* 04. mice mission / */
+.mission__content__img img{
+  width: 100%;
+}
+
+.mission__content__text {
+  text-align: justify;
+  margin: 15px 0;
+}
+
+.mission__title h2{
+  margin-top: 10px;
+  position: relative;
+}
+
+.mission-lineL {
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 3px;
+  background-color: #231F20;
+  left: 0;
+  top: 50%;
+}
+
+.mission-lineR {
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 3px;
+  background-color: #231F20;
+  right: 0;
+  top: 50%;
+}
+
+@media (max-width: 767px) {
+  .micebd__img__order {
+    order: 2;
+  }
+}
+
+/* 05. mice vision / */
+.vision__content__img img {
+  width: 100%;
+}
+
+.vision__content_text {
+  text-align: justify;
+  margin: 15px 0;
+}
+
+.vision_title h2{
+  margin-top: 10px;
+  position: relative;
+}
+
+.vision-lineL {
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 3px;
+  background-color: #231F20;
+  left: 0;
+  top: 50%;
+}
+
+.vision-lineR {
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 3px;
+  background-color: #231F20;
+  right: 0;
+  top: 50%;
+}
+
+/* media query for Mice Bangladesh responsive */
+@media (max-width: 900px) {
+  .meeting-line, .conference-line {
+    width: 50%;
+}
+.incentive-line, .exhibition-line {
+  width: 50%;
+}
+}
+
+@media (max-width: 900px) {
+  .mission-lineL, .mission-lineR {
+    width: 30%;
+}
+
+.vision-lineL, .vision-lineR {
+  width: 30%;
+}
+}
+
+@media (max-width: 425px) {
+  .wemice_content_textR h4 {
+    margin: 10px 0;
+  }
+  .wemice_content_text h4 {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 425px) {
+  p {
+    font-size: .8rem;
+  }
+}
+
+
+
+/* ----------------------
+## Table Contents ##
+* 02. Founder members
+---------------------- **/
+
+/* 02. Founder members */
+.founder__title {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.founder__title::after{
+  content: '';
+  position: absolute;
+  width: 130px;
+  height: 5px;
+  background-color: #ff0000;
+  bottom: 10px;
+}
+
+
+/* card design*/
+.card-body {
+  text-align: center;
+}
+
+.card--icon i, .card-text{
+  text-align: justify;
+}
+.card--icon i:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.card-title {
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.3;
+}
+
+/* ----------------------
+## Table Contents ##
+* 02. our work / work slider
+* 03. why join /
+---------------------- **/
+/* 02. our work / */
+.work__title {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.work__title::after{
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  width: 130px;
+  height: 5px;
+  background-color: #ff0000;
+}
+
+.work__text {
+  margin: 20px 0;
+  padding: 0;
+  text-align: justify;
+}
+
+/* why join */
+.Join_title {
+  padding-left: 0;
+  position: relative;
+  margin: 0 10px;
+}
+
+.Join_title_line {
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 3px;
+  background-color: #231F20;
+  top: 50%;
+  right: 20px;
+}
+
+.join__lists li{
+  margin: 5px 0;
+}
+
+.join__lists{
+  list-style-position: inside;
+}
+
+@media (max-width: 992px) {
+  .Join_title_line {
+    width: 30%;
+    top: 40%;
+  }
+  
+}
+
+/* ----------------------
+## Table Contents ##
+* 02. why mice /
+---------------------- **/
+
+  .nav-item a {
+    font-size: .9rem;
+  }
+
+/* 02. why mice / */
+
+.whymice__title {
+  padding-left: 0;
+  position: relative;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.whymice__title_line {
+  content: '';
+  position: absolute;
+  width: 45%;
+  height: 3px;
+  background-color: #231F20;
+  top: 50%;
+  right: 0;
+}
+
+.why__lists li {
+  line-height: 2;
+  /* list-style-position: inside; */
+}
+
+@media (max-width: 768px) {
+  .whymice__title_line {
+    display: none;
+  }  
+}
+
+/* ----------------------
+## Table Contents ##
+* 02. acitvity /
+---------------------- **/
+
+/* 02. acitvity */
+.activity-carousel {
+  margin-top: 15px;
+}
+
+/* ----------------------
+## Table Contents ##
+* 02. Join Us /
+* 03. log in form
+* 04. sing up
+* 05. contact us
+---------------------- **/
+
+/* 02. Join Us / */
+.Join__Us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.joinus__title {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.joinus__title::after{
+  content: '';
+  position: absolute;
+  bottom: 40px;
+  width: 130px;
+  height: 5px;
+  background-color: #ff0000;
+}
+
+.log__in {
+  background-color: #fff;
+  border-radius: 5px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 2px 6px -2px;
+}
+
+.log__in__content {
+  text-align: center;
+}
+
+.sign__up {
+  background-color: #231F20;
+  color: #fff;
+  border-radius: 5px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 2px 6px -2px;
+}
+
+.sign__up__content {
+  text-align: center;
+}
+
+.Join__Us button{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+iframe {
+  width: 100%;
+  height: 90%;
+}
+
+@media (max-width:768px){
+  .Join__Us {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+
+/* 03. log in form */
+.login__form {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 2px 6px -2px;
+  margin-top: 50px;
+  margin-left: 50px;
+  position: static;
+  z-index: 1;
+}
+.sign__up__content button, .login__form__content button {
+  font-weight: 600;
+}
+.login__form__content {
+  width: 80%;
+}
+
+.login__form__content input{
+  box-shadow: 1px 2px 6px -2px;
+}
+
+/* 04. sing up */
+.sign__up__form__button button{
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px;
+}
+
+.card--icon i {
+  padding: 0 5px;
+}
+
+@media (max-width:768px) {
+  .login__form {
+    margin-top: 0;
+    margin-left: 0;
+}  
+}
+
+/* 05. contact us */
+.contact__us p {
+  margin: 10px 5px;
+  padding-left: 0;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+.contact__us p span {
+  margin-right: 10px;
+}
+.Contact__title {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.Contact__title::after {
+    content: '';
+    position: absolute;
+    bottom: 40px;
+    width: 130px;
+    height: 5px;
+    background-color: #ff0000;
+}
+
+.contact__us i{
+  margin: 10px 5px;
+}
+
+
+/* isotope gallery */
+.portfolio-menu{
+	text-align:center;
+}
+.portfolio-menu ul li{
+	display:inline-block;
+	margin: 5px;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	transition:all 05s ease;	
+}
+
+.portfolio-item{
+	width: 100%;
+}
+.portfolio-item .item{
+	float:left;
+	margin-bottom:10px;
+}
+
+@media (max-width: 425px) {
+  .gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* parjatan list */
+/* .parjatan-list a{
+  text-decoration: none;
+  color: black;
+} */
+
+.parjatan-list li{
+  list-style-position: inside;
+  margin: 10px 0;
+}
